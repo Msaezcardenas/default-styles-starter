@@ -1,4 +1,5 @@
 import React from 'react';
+import img from './computer.jpeg';
 
 const App = () => {
   return (
@@ -33,7 +34,9 @@ const App = () => {
         <li> third item</li>
       </ul>
 
-      <img src='./computer.jpeg' alt='computer' class='img' />
+      {/* <div className='container'>
+      </div> */}
+      <img src={img} alt='computer' class='img' />
       <br />
       <button class='btn' type='button'>
         regular button
@@ -41,12 +44,18 @@ const App = () => {
       <button class='btn btn-hipster' type='button'>
         hipster button
       </button>
+
       <br />
       <br />
       <br />
 
       <div class='alert alert-danger'>hello from danger</div>
+      <br />
       <div class='alert alert-success'>hello from success</div>
+
+      <br />
+      <br />
+
       <form class='form'>
         <h4>contact form</h4>
         <div class='form-row'>
